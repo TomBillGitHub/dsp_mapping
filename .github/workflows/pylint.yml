@@ -19,8 +19,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
     - name: Install dependencies with poetry
-      run: poetry install --no-root
+      run: poetry install
 
+<<<<<<< HEAD
     - name: Analyse code with pylint
       run: poetry run pylint ./*.py
 
@@ -29,3 +30,8 @@ jobs:
       with:
           python-version: 3.12 
           pylint-args: ./*.py
+=======
+    - name: Analysing the code with pylint
+      run: |
+        poetry run pylint *.py
+>>>>>>> parent of 77ca80a (Update pylint.yml)
