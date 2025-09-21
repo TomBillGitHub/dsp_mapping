@@ -19,19 +19,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
     - name: Install dependencies with poetry
-      run: poetry install
+      run: poetry install --no-root
 
-<<<<<<< HEAD
-    - name: Analyse code with pylint
-      run: poetry run pylint ./*.py
-
-    - name: PyLint with dynamic badge
-      uses: Silleellie/pylint-github-action@v2.1
-      with:
-          python-version: 3.12 
-          pylint-args: ./*.py
-=======
     - name: Analysing the code with pylint
       run: |
         poetry run pylint *.py
->>>>>>> parent of 77ca80a (Update pylint.yml)
