@@ -21,6 +21,5 @@ jobs:
     - name: Install dependencies with poetry
       run: poetry install --no-root
 
-    - name: Analysing the code with pylint
-      run: |
-        poetry run pylint *.py
+    - name: Lint
+      run: poetry run pylint ./*.py

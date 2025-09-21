@@ -9,8 +9,8 @@ import pandas as pd
 from fastapi import FastAPI
 from google.cloud import bigquery
 
-from dsps import DSPS
-from compare_vs_original_mapping import CompareMapping
+from dsp_mapping.dsps import DSPS
+from dsp_mapping.compare_vs_original_mapping import CompareMapping
 
 
 _logger = logging.getLogger(__name__)

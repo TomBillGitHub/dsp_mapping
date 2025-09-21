@@ -21,8 +21,6 @@ dependencies = [
 [tool.poetry]
 packages = [{include = "dsp_mapping"}]
 
-[tool.poetry.scripts]
-dsp-mapping = "dsp_mapping.main:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
