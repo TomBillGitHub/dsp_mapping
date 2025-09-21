@@ -1,5 +1,5 @@
 # DSP Mapping
-This is a small ETL service I created for my role at Bella Figura Music.
+This is an ETL service I created for data mapping and consolidation.
 
 The script uses the BigQuery API to read data from the central datawarehouse. It checks for new values that are not currently categorised, and maps them to a clean value. 
 
