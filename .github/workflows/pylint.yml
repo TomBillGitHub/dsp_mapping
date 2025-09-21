@@ -23,3 +23,6 @@ jobs:
 
     - name: Analyse code with pylint
       run: poetry run pylint ./*.py
+
+    - name: PyLint with dynamic badge
+      uses: Silleellie/pylint-github-action@v2.1
