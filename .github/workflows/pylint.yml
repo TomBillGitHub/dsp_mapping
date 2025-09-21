@@ -26,3 +26,6 @@ jobs:
 
     - name: PyLint with dynamic badge
       uses: Silleellie/pylint-github-action@v2.1
+      with:
+          python-version: 3.12 
+          pylint-args: ./*.py
