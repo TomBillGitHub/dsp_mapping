@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "src", from = "."}]
+packages = [{include = "dsp_mapping", from = "."}]
 
 
 [build-system]
